@@ -1,7 +1,7 @@
 {
-    "format": "best",
+    "format": "bestaudio+bestvideo",
     "merge_output_format": "mp3",
-    "outtmpl": "C:/Users/Alex/Desktop/PROGRAMMING/PYTHON/youtube_download/%(title)s.mp3",
+    "outtmpl": "some_path",
     "noprogress": true,
     "quiet": true,
     "writesubtitles": false,

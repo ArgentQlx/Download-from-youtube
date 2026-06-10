@@ -15,8 +15,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.init_events()
         self.file = QFileDialog()
         self.data = DataManager()
-        self.fold_path = ''
-        self.file_name = ''
+        self.path = ''
         # self.subtitles.setDisabled(True)
         self.textBrowser.setOpenExternalLinks(True)
         self.cancel_btn.setDisabled(True)
@@ -57,12 +56,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.url_input.setText('')
         self.title_input.setText('')
 
-        if not title: 
-            path += '/%(title)s.' + ext
-            self.file_name = '%(title)s'
-        else:
-            path += f'/{title}.{ext}'
-            self.file_name = title
+        if not title: path += '/%(title)s.' + ext
+        else: path += f'/{title}.{ext}'
+        self.path = path
+
         self.data.change_param('outtmpl', path)
 
         self.progress_label.setText('Подготовка...')
