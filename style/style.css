@@ -1,0 +1,115 @@
+QMainWindow {
+    background-color: #130c3d;
+    /* color: #e48c08; */
+}
+
+QLabel {
+    color: white;
+}
+
+QPushButton, QLineEdit {
+    min-height: 25px;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+QPushButton {
+    color: white;
+    border: 2px solid white;
+    background-color: #130c3d;
+    /* background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #130c3d, stop:1 #e48c08); */
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+QLabel {
+    color: #df9306;
+}
+
+QPushButton:hover {
+    /* color: #130c3d; */
+    background: #df9306;
+    /* background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #130c3d, stop:1 #e48c08); */
+    /* background-color: white; */
+}
+
+QPushButton::disabled {
+    background-color: #df9306;
+    color: #130c3d;
+    border-color: #df9306;
+}
+
+QCheckBox, QRadioButton {
+    color: white;
+}
+
+QTextBrowser {
+    border-radius: 4px;
+    color: #130c3d;
+    padding: 5px;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+QRadioButton::indicator {
+    border-radius: 12px;
+}
+
+QCheckBox::indicator:hover, QRadioButton::indicator:hover {
+    /* background-color: #ff0077; */
+    background-color: lightgray;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background-color: #df9306;
+    /* background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #130c3d, stop:1 #e48c08); */
+}
+
+QProgressBar {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background-color: #df9306;
+    width: 20px;
+    /* Ширина одного "кубика" (сегмента) в прерывистом режиме */
+}
+
+QComboBox {
+    border-radius: 8px;
+    border: 2px solid #df9306;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    width: 0px;
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+}
+
+QAbstractItemView::item {
+    background-color: #130c3d;
+    color: white;
+    padding: 5px;
+    border-left: 1px solid #df9306;
+    border-right: 1px solid #df9306;
+    border-bottom: 1px solid #df9306;
+}
+
+QAbstractItemView::item:hover {
+    background-color: #df9306;
+}

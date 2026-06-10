@@ -1,0 +1,16 @@
+{
+    "format": "bestaudio+bestvideo",
+    "merge_output_format": "mp3",
+    "outtmpl": "some_path",
+    "noprogress": true,
+    "quiet": true,
+    "writesubtitles": false,
+    "subtitleslangs": [
+        "ru",
+        "en"
+    ],
+    "writeautomaticsub": false,
+    "embedsubs": true,
+    "noplaylist": true,
+    "ffmpeg_location": ".\\ffmpeg\\bin"
+}

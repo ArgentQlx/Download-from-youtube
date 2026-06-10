@@ -1,0 +1,2 @@
+pyuic6 -o .\gui\main_window.py .\gui\main_window.ui
+pyinstaller --windowed --onefile --icon=./img/favicon.ico --name=YT_DOWNLOAD app.py
